@@ -4,9 +4,9 @@
 
 **Built for the Next-Generation Web Experiences Hackathon**
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-pagemind.github.io-6c63ff?style=flat-square)](https://meghna-cs.github.io/pagemind)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-PageMind.github.io-6c63ff?style=flat-square)](https://meghna-cs.github.io/PageMind/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
-[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4?style=flat-square&logo=googlechrome)](https://github.com/meghna-cs/pagemind/releases)
+[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285F4?style=flat-square&logo=googlechrome)](https://github.com/meghna-cs/PageMind/releases)
 
 ---
 
@@ -26,7 +26,7 @@ PageMind lives inside your browser as a Chrome side panel. Open it on **any webp
 
 ## Demo
 
-👉 **[Try the live demo](https://meghna-cs.github.io/pagemind)** — no installation needed, just paste a free Gemini API key.
+👉 **[Try the live demo](https://meghna-cs.github.io/PageMind/)** — no installation needed, just paste a free Gemini API key.
 
 ---
 
@@ -38,7 +38,7 @@ Visit [aistudio.google.com](https://aistudio.google.com), click "Get API key" �
 **Free tier:** 15 requests/min, 1,000,000 tokens/day — more than enough.
 
 ### 2. Download the extension
-[Download the latest ZIP from Releases](https://github.com/meghna-cs/pagemind/releases/latest)
+[Download the latest ZIP from Releases](https://github.com/meghna-cs/PageMind/releases/latest)
 
 ### 3. Load into Chrome
 1. Open `chrome://extensions`
@@ -61,8 +61,8 @@ Click the PageMind icon in your toolbar, paste your API key, and you're live.
 
 ```bash
 # Clone the repo
-git clone https://github.com/meghna-cs/pagemind.git
-cd pagemind
+git clone https://github.com/meghna-cs/PageMind.git
+cd PageMind
 
 # Install side panel dependencies
 cd extension/sidepanel

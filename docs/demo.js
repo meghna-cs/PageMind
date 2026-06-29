@@ -16,8 +16,8 @@ function activateDemo() {
   const keyInput = document.getElementById("demoApiKey");
   const key = keyInput.value.trim();
 
-  if (!key.startsWith("AIza")) {
-    showDemoError("That doesn't look like a valid Gemini key. It should start with 'AIza'.");
+  if (key.length < 10) {
+    showDemoError("Please enter a valid Gemini API key.");
     return;
   }
 
@@ -120,7 +120,7 @@ Instructions:
 - If asked to summarize, use exactly 3 bullet points starting with •
 - Keep responses under 150 words`;
 
-  const GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:streamGenerateContent";
+  const GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent";
 
   try {
     const response = await fetch(`${GEMINI_URL}?key=${demoApiKey}&alt=sse`, {

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PageMind — AI Browser Companion</title>
+  <meta name="description" content="Summarize, ask questions, explain anything — without leaving your tab. A free Chrome extension powered by Gemini AI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="nav-icon">🧠</span>
+        <span class="nav-name">PageMind</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#demo">Live Demo</a>
+        <a href="#install">Install</a>
+        <a href="https://github.com/meghna-cs/pagemind" class="nav-github" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Built for Next-Generation Web Experiences Hackathon
+      </div>
+
+      <h1 class="hero-headline">
+        Your AI companion<br/>
+        <span class="gradient-text">for every webpage</span>
+      </h1>
+
+      <p class="hero-sub">
+        Summarize, ask questions, explain anything — without leaving your tab.<br/>
+        Lives in your browser. Reads any page. Works on everything.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#install" class="btn-primary">
+          Install Free Extension
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#demo" class="btn-ghost">Try Live Demo</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-val">Free</span>
+          <span class="stat-label">Gemini API tier</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-val">1M</span>
+          <span class="stat-label">tokens/day</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-val">Any</span>
+          <span class="stat-label">webpage</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating demo preview -->
+    <div class="hero-preview">
+      <div class="browser-chrome">
+        <div class="browser-dots">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="browser-url">bbc.com/news/technology</div>
+      </div>
+      <div class="preview-content">
+        <div class="preview-page">
+          <div class="preview-line w-full"></div>
+          <div class="preview-line w-3/4"></div>
+          <div class="preview-line w-full"></div>
+          <div class="preview-line w-5/6"></div>
+          <div class="preview-line w-2/3"></div>
+          <div class="preview-line w-full mt-4"></div>
+          <div class="preview-line w-4/5"></div>
+          <div class="preview-line w-full"></div>
+        </div>
+        <div class="preview-panel">
+          <div class="pp-header">
+            <span class="pp-icon">🧠</span>
+            <span class="pp-title">PageMind</span>
+          </div>
+          <div class="pp-badge">article</div>
+          <div class="pp-msg pp-ai">
+            <div class="pp-line"></div>
+            <div class="pp-line pp-short"></div>
+            <div class="pp-line"></div>
+            <div class="pp-line pp-medium"></div>
+          </div>
+          <div class="pp-msg pp-user">
+            <div class="pp-line pp-medium"></div>
+          </div>
+          <div class="pp-msg pp-ai">
+            <div class="pp-line pp-short"></div>
+          </div>
+          <div class="pp-input">
+            <div class="pp-input-bar"></div>
+            <div class="pp-send">➤</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="section-inner">
+      <div class="section-label">What it does</div>
+      <h2 class="section-title">Five features. One shortcut away.</h2>
+      <p class="section-sub">Open with Ctrl+Shift+K on any page. No copy-paste, no tab-switching.</p>
+
+      <div class="features-grid">
+        <div class="feature-card feature-hero-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Instant Summarize</h3>
+          <p>One click → three specific bullet points about the page you're on. Not generic. Not vague. Specific to <em>this</em> article.</p>
+          <div class="feature-demo">
+            <div class="demo-chip active">Summarize</div>
+            <div class="demo-result">
+              <p>• UK regulator opens formal probe into AI energy claims</p>
+              <p>• Three major data centres face scrutiny over carbon disclosures</p>
+              <p>• Ruling expected by Q3 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🧠</div>
+          <h3>Ask Anything</h3>
+          <p>Full multi-turn conversation about the page. The AI remembers what you asked before.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h3>Explain Selection</h3>
+          <p>Highlight any confusing sentence → right-click → "Explain with PageMind". Explanation appears in the side panel instantly.</p>
+        </div>
+
+        <div class="feature-card feature-highlight">
+          <div class="feature-icon">✨</div>
+          <h3>Auto-fill Forms</h3>
+          <p>Click "Fill Form" and AI generates realistic values for every field on the page. Name, email, bio — filled in one shot.</p>
+          <div class="feature-tag">🎯 Demo killer</div>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Smart Action Chips</h3>
+          <p>Context-aware suggestions that change based on the page type: news, product page, GitHub repo, documentation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Demo -->
+  <section class="demo-section" id="demo">
+    <div class="section-inner">
+      <div class="section-label">Live Demo</div>
+      <h2 class="section-title">Try it right here.</h2>
+      <p class="section-sub">Real Gemini AI. Real responses. No extension needed — just paste your free API key below.</p>
+
+      <div class="demo-container">
+        <div class="demo-context-panel">
+          <div class="demo-context-label">📄 Sample article context</div>
+          <div class="demo-article">
+            <strong>AI Energy Claims: UK Regulator Opens Probe</strong>
+            <p>The UK's Competition and Markets Authority (CMA) has opened a formal investigation into claims made by three major cloud computing companies about the environmental impact of their AI data centres. The probe, announced on Tuesday, focuses on whether energy efficiency claims made in public marketing materials are substantiated by independent data.</p>
+            <p>The companies under scrutiny — which the CMA has not yet named pending legal review — have marketed their AI infrastructure as "carbon-neutral" or "net-zero compatible." However, leaked internal documents, published by environmental nonprofit DataCentre Watch, suggest actual power usage effectiveness (PUE) ratios are significantly higher than claimed.</p>
+            <p>CMA chief executive Sarah Cardell stated that the investigation would seek to "establish a clear baseline of truth in AI environmental disclosures." The ruling is expected by Q3 2025. Fines of up to 10% of global turnover may apply if misleading claims are confirmed.</p>
+          </div>
+        </div>
+
+        <div class="demo-chat-panel">
+          <div class="demo-chat-header">
+            <span class="demo-brain">🧠</span>
+            <span>PageMind — Live Demo</span>
+            <span class="demo-live-badge">LIVE</span>
+          </div>
+
+          <div class="demo-key-input-area" id="keyInputArea">
+            <p>Paste your free <a href="https://aistudio.google.com" target="_blank">Gemini API key</a> to activate:</p>
+            <div class="demo-key-row">
+              <input type="password" id="demoApiKey" placeholder="AIza..." class="demo-key-field" />
+              <button onclick="activateDemo()" class="demo-activate-btn" id="activateBtn">Activate</button>
+            </div>
+            <p class="demo-key-note">Your key stays in your browser. Never stored on any server.</p>
+          </div>
+
+          <div class="demo-messages" id="demoMessages">
+            <div class="demo-empty">
+              <p>👆 Add your API key above to start chatting</p>
+            </div>
+          </div>
+
+          <div class="demo-quick-chips" id="demoChips" style="display:none">
+            <button class="demo-chip-btn" onclick="sendDemoPrompt('Summarize this article in exactly 3 bullet points starting with •')">Summarize</button>
+            <button class="demo-chip-btn" onclick="sendDemoPrompt('What is the main argument of this article?')">Main Argument</button>
+            <button class="demo-chip-btn" onclick="sendDemoPrompt('What are the key facts and figures mentioned?')">Key Facts</button>
+            <button class="demo-chip-btn" onclick="sendDemoPrompt('What might happen next based on this article?')">What\'s Next?</button>
+          </div>
+
+          <div class="demo-input-row" id="demoInputRow">
+            <input type="text" id="demoInput" placeholder="Ask anything about this article..." class="demo-text-input" disabled onkeydown="if(event.key==='Enter')sendDemo()" />
+            <button onclick="sendDemo()" class="demo-send-btn" id="demoSendBtn" disabled>➤</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Install -->
+  <section class="install-section" id="install">
+    <div class="section-inner">
+      <div class="section-label">Install</div>
+      <h2 class="section-title">Up in 60 seconds.</h2>
+
+      <div class="install-steps">
+        <div class="install-step">
+          <div class="install-num">1</div>
+          <div class="install-body">
+            <h3>Download the extension</h3>
+            <p>Grab the latest ZIP from GitHub Releases. No account needed.</p>
+            <a href="https://github.com/meghna-cs/pagemind/releases/latest" class="install-btn" target="_blank">
+              Download ZIP
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="install-step">
+          <div class="install-num">2</div>
+          <div class="install-body">
+            <h3>Enable Developer Mode</h3>
+            <p>Open Chrome → <code>chrome://extensions</code> → toggle Developer Mode in the top-right corner.</p>
+          </div>
+        </div>
+
+        <div class="install-step">
+          <div class="install-num">3</div>
+          <div class="install-body">
+            <h3>Load the extension</h3>
+            <p>Click "Load unpacked" → select the <code>extension/</code> folder from the ZIP. Done.</p>
+          </div>
+        </div>
+
+        <div class="install-step">
+          <div class="install-num">4</div>
+          <div class="install-body">
+            <h3>Add your Gemini key</h3>
+            <p>Get a free key from <a href="https://aistudio.google.com" target="_blank">aistudio.google.com</a> → paste it on first launch. That's it.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="shortcut-callout">
+        <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>K</kbd>
+        <span>to open PageMind on any tab</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span>🧠</span>
+        <span>PageMind</span>
+      </div>
+      <p class="footer-note">Built for the Next-Generation Web Experiences Hackathon · Open source · $0 cost</p>
+      <a href="https://github.com/meghna-cs/pagemind" class="footer-github" target="_blank">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        View on GitHub
+      </a>
+    </div>
+  </footer>
+
+  <script src="demo.js"></script>
+</body>
+</html>

@@ -1,7 +1,7 @@
-// gemini.js — Gemini 1.5 Flash streaming API
+// gemini.js — Gemini 2.5 Flash streaming API
 
 const GEMINI_URL =
-  "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:streamGenerateContent";
+  "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent";
 
 export async function streamGemini({ apiKey, pageText, pageTitle, pageUrl, messages, onChunk, onDone, onError }) {
   const systemPrompt = `You are PageMind, an AI companion embedded in the user's browser. You help users understand and interact with webpages.
@@ -82,7 +82,7 @@ Instructions:
 }
 
 export async function getSuggestedFillValues({ apiKey, formFields, pageTitle }) {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
 
   const fieldList = formFields.map((f) => `- ${f.label} (type: ${f.type})`).join("\n");
 

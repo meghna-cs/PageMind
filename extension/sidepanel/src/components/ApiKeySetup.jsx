@@ -8,8 +8,8 @@ export default function ApiKeySetup({ onSave }) {
 
   async function handleSave() {
     const trimmed = key.trim();
-    if (!trimmed.startsWith("AIza")) {
-      setError("This doesn't look like a valid Gemini API key. It should start with 'AIza'.");
+    if (trimmed.length < 10) {
+      setError("Please enter a valid Gemini API key.");
       return;
     }
 
@@ -75,7 +75,7 @@ export default function ApiKeySetup({ onSave }) {
         <input
           type="password"
           className="key-input"
-          placeholder="AIza..."
+          placeholder="Paste your Gemini API key here"
           value={key}
           onChange={(e) => setKey(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && handleSave()}

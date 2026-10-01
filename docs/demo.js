@@ -120,7 +120,7 @@ Instructions:
 - If asked to summarize, use exactly 3 bullet points starting with •
 - Keep responses under 150 words`;
 
-  const GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:streamGenerateContent";
+  const GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:streamGenerateContent";
 
   try {
     const response = await fetch(`${GEMINI_URL}?key=${demoApiKey}&alt=sse`, {

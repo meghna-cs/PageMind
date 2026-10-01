@@ -1,6 +1,6 @@
-// gemini.js — Gemini 3.5 Flash streaming API
+// gemini.js — Gemini 3.5 Flash-Lite streaming API
 
-const MODEL = "gemini-3.5-flash";
+const MODEL = "gemini-3.5-flash-lite";
 const GEMINI_URL =
   `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:streamGenerateContent`;
 
